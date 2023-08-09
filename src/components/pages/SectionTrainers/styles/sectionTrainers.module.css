@@ -1,0 +1,14 @@
+.trainerWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .trainerWrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+/*# sourceMappingURL=sectionPlans.module.css.map */

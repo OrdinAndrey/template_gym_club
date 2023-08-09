@@ -1,0 +1,31 @@
+.classesWrap {
+  display: flex;
+  -webkit-justify-content: center;
+  flex-wrap: wrap;
+}
+
+.singleClass img {
+  max-width: 360px;
+  height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .singleClass img {
+    max-width: 290px;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .singleClass {
+    max-width: 510px;
+    width: 100%;
+    height: 100%;
+  }
+  .singleClass img {
+    max-width: 510px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=sectionGallery.module.css.map */

@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.wrapper h1 {
+  font: var(--font-l);
+  margin-bottom: 40px;
+  color: var(--bg-sidebar);
+}
+.wrapper p {
+  font: var(--font-s);
+  margin-bottom: 20px;
+  color: var(--bg-sidebar);
+}
+.wrapper li {
+  list-style: none;
+}
+.wrapper a {
+  color: #56BBF9;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=sectionNotFound.module.css.map */

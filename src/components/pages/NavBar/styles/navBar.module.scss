@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  height: var(--navbar-height-xl);
+  background: var(--bg-sidebar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mainMenu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+.logo {
+  float: left;
+}
+
+.headNav li {
+  display: inline-block;
+  position: relative;
+}
+
+.headNav li:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  content: '';
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.headNav {
+  background-color: transparent;
+  position: relative;
+  background: var(--bg-sidebar);
+}
+
+.burger {
+  display: none;
+}
+.burgerLine {
+  background: var(--primary-color);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.burgerLine::before,
+.burgerLine::after {
+  background: var(--primary-color);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.burgerLine::before {
+  top: 10px;
+}
+
+.burgerLine::after {
+  top: -10px;
+}
+.sideMenu {
+  display: none;
+}
+
+.sideMenu:checked ~ .hamburger .hamburgerLine {
+  background: transparent;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+  }
+  .headNav {
+    position: absolute;
+    top: var(--navbar-height-xl);
+    width: 100%;
+    height: 200px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    z-index: 1;
+    max-height: 0;
+    max-width: 720px;
+  }
+  .headNav {
+    background: var(--bg-sidebar);
+    transition: max-height 0.5s ease-out;
+  }
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 30px;
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+  .headNav li:hover::after {
+    height: 0;
+  }
+
+  .headNav:hover::after {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #ccc;
+    color: #222;
+  }
+
+  .headNav li a {
+    padding: 5px 10px;
+    margin: 2px 5px;
+  }
+
+  .headNav a:hover {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #ccc;
+    color: #222
+  }
+
+  .headNav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .sideMenu:checked ~ nav {
+    max-height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+}

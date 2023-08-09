@@ -1,0 +1,318 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-top: 60px;
+}
+.contacts span {
+  display: block;
+  font-size: 14px;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+.contacts p {
+  color: var(--primary-color);
+}
+.subscribe {
+  background-image: url(@/assets/img/footer-signup.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 45px;
+  margin-bottom: 36px;
+  margin-top: 43px;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 5px rgba(14, 14, 14, 0.7);
+  align-items: center;
+}
+.subscribeText {
+  padding: 34px 0 26px;
+}
+.subscribeText h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.subscribeText p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.subscribeForm {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+}
+.subscribeForm input {
+  width: 100%;
+  height: 46px;
+  border: none;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.subscribeForm .subscribeBtn {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  height: 46px;
+  width: 62px;
+  border-radius: 0;
+}
+.subIcon {
+  padding-top: 3px;
+}
+.copyright {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--primary-color);
+  padding-bottom: 30px;
+}
+.copyright ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.container .copyright ul li a {
+  color: var(--primary-color);
+}
+.copyright span {
+  display: flex;
+  align-items: center;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social ul {
+  gap: 5px;
+}
+.social ul li {
+  width: 40px;
+  height: 40px;
+}
+.social ul a {
+  display: block;
+  background: #282828;
+  border-radius: 50%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+.social ul a:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#eb3c5a),
+    to(#f67831)
+  );
+  background: -o-linear-gradient(left, #eb3c5a, #f67831);
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+}
+.socIcon {
+  margin-top: 11px;
+  width: 18px;
+  height: 18px;
+}
+.bannerWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.bannerLeft {
+  height: 400px;
+  width: 100%;
+  background-image: url(@/assets/img/footer-banner-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.bannerRight {
+  height: 400px;
+  width: 100%;
+  background-image: url(@/assets/img/footer-banner-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.bannerLeft,
+.bannerRight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1;
+  span {
+    font: var(--font-m);
+    color: var(--orange);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font: var(--font-l);
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  p {
+    color: var(--primary-color);
+  }
+}
+.bannerLeft,
+.bannerRight {
+  span,
+  h2,
+  p,
+  a {
+    margin-left: 60px;
+  }
+  span,
+  h2,
+  p {
+    text-shadow: 2px 2px 5px rgba(14, 14, 14, 0.7);
+  }
+  &:after{
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 520px;
+    height: 310px;
+    border: 18px solid rgba(255, 255, 255, 0.2);
+    content: "";
+    -ms-transform: translate(-260px, -155px);
+    transform: translate(-260px, -155px);
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+  .bannerLeft,
+  .bannerRight {
+       &:after{
+      left: 57%;
+      width: 450px;
+    }
+  }
+  .bannerLeft{
+    background-position: top right -112px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: start;
+  }
+  .subscribeForm {
+    margin-bottom: 20px;
+  }
+  .contacts span {
+    font-size: 12px;
+  }
+  .contacts p {
+    font-size: 14px;
+  }
+  .subscribeText {
+    padding: 24px 0 16px;
+  }
+  .subscribeText h4 {
+    font-size: 20px;
+  }
+  .subscribeText p {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .bannerWrap {
+  flex-direction: column;
+  }
+  .bannerLeft,
+  .bannerRight {
+    &:after{
+      left: 50%;
+      width: 520px;
+    }
+  }
+  .bannerLeft{
+    background-position: top center;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 6px;
+  }
+  .contacts span {
+    margin-bottom: 6px;
+  }
+  .copyright {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .copyright span {
+    order: 2;
+  }
+  .copyright ul {
+    order: 1;
+  }
+  .social {
+    order: 3;
+  }
+  .bannerLeft,
+  .bannerRight {
+    &:after{
+      left: 57%;
+      width: 450px;
+    }
+  }
+  .bannerLeft{
+    background-position: top right -112px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+  .bannerLeft,
+  .bannerRight {
+    &:after{
+      display: none;
+    }
+  }
+}

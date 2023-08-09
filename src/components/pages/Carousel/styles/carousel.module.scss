@@ -1,0 +1,145 @@
+.containerWorkout {
+  display: flex;
+  flex-direction: column;
+}
+.containerWorkout .customDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 20px;
+  li {
+    cursor: pointer;
+    button {
+      transition: background-color 0.3s;
+      &:hover,
+      &:focus {
+        outline: none;
+        &:before {
+          background-color: #b0531b;
+          opacity: 0.5;
+        }
+      }
+      &:before {
+        width: 10px;
+        height: 10px;
+        font-size: 0;
+        background-color: #f67831;
+        border-radius: 50%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.containerStories {
+  max-width: 945px;
+  margin: 0 auto;
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1100px;
+    height: 540px;
+    background: url('./assets/img/bg.png.webp');
+    content: '';
+    -ms-transform: translate(-550px, -270px);
+    transform: translate(-550px, -270px);
+    z-index: -1;
+  }
+  .sectionTitle {
+    margin-bottom: 35px;
+  }
+}
+
+.prevArrow {
+  cursor: pointer;
+  rotate: 180deg;
+  position: absolute;
+  left: -90px;
+  top: 30%;
+}
+.nextArrow {
+  cursor: pointer;
+  position: absolute;
+  right: -90px;
+  top: 30%;
+}
+.containerStories .slick-slider {
+  display: flex;
+}
+@media (max-width: 1199px){
+  .containerStories {
+    max-width: 770px;
+    &:after {
+      top: 58%;
+      left: 70%;
+      width: 770px;
+      height: 540px;
+    }
+  }
+  .prevArrow {
+    left: -70px;
+    top: 30%;
+  }
+  .nextArrow {
+    right: -70px;
+    top: 30%;
+  }
+}
+@media (max-width: 991px){
+  .containerStories {
+    max-width: 600px;
+    &:after {
+      top: 58%;
+      left: 87%;
+      width: 600px;
+      height: 540px;
+    }
+  }
+  .prevArrow {
+    left: -40px;
+    top: 30%;
+  }
+  .nextArrow {
+    right: -40px;
+    top: 30%;
+  }
+}
+@media (max-width: 767px){
+  .containerStories {
+    max-width: 478px;
+    &:after {
+      top: 58%;
+      left: 116%;
+      width: 480px;
+      height: 540px;
+    }
+  }
+  .prevArrow {
+    left: -40px;
+    top: 30%;
+  }
+  .nextArrow {
+    right: -40px;
+    top: 30%;
+  }
+}
+@media (max-width: 575px){
+  .containerStories {
+    max-width: 350px;
+    &:after {
+      top: 58%;
+      left: 154%;
+      width: 350px;
+      height: 540px;
+    }
+  }
+  .prevArrow {
+    display: none;
+  }
+  .nextArrow {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+.galleryBtn {
+  display: flex;
+  margin: 0 auto 42px;
+  gap: 48px;
+  max-width: 600px;
+}
+.galleryBtn .active {
+  color: var(--orange);
+}
+
+.galleryBtn button {
+  font: var(--font-m);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+  height: 100%;
+  width: 100%;
+}
+.galleryBtn button:hover {
+  color: var(--orange);
+}
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.imageGallery img {
+  height: auto;
+}
+
+.image.disappear {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 0;
+  height: 0;
+}
+
+.image.appear {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 1199px) {
+  .imageGallery img {
+    max-height: 320px;
+  }
+}
+@media (max-width: 991px) {
+  .imageGallery img {
+    max-height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .imageGallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageGallery img {
+    max-height: 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=sectionGallery.module.css.map */

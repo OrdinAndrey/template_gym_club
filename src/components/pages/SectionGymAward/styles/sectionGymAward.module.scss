@@ -1,0 +1,26 @@
+.awardWrap{
+  padding: 100px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  img{
+    width: 350px;
+  }
+  h2{
+    font: var(--font-l);
+    font-weight: 600;
+    color: var(--bg-footer);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p{
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+.awardWrap{
+  flex-direction: column;
+  align-items: center;
+}
+}

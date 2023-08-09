@@ -1,0 +1,21 @@
+.wrapper{
+  margin: 0 auto;
+  max-width: 400px;
+  h1{
+    font: var(--font-l);
+    margin-bottom: 40px;
+    color: var(--bg-sidebar)
+  }
+  p{
+    font: var(--font-s);
+    margin-bottom: 20px;
+    color: var(--bg-sidebar);
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: #56BBF9;
+    text-decoration: underline;
+  }
+}

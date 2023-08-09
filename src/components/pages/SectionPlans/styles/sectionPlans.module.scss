@@ -1,0 +1,12 @@
+.plansWrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .plansWrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

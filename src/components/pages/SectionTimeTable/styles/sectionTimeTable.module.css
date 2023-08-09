@@ -1,0 +1,157 @@
+.classBtn {
+  display: flex;
+  margin: 0 auto 42px;
+  gap: 48px;
+  max-width: 600px;
+}
+.classBtn .active {
+  color: var(--orange);
+}
+
+.classBtn button {
+  font: var(--font-m);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+  height: 100%;
+  width: 100%;
+}
+.classBtn button:hover {
+  color: var(--orange);
+}
+
+.workoutTime {
+  font: var(--font-m);
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.schedule {
+  margin-bottom: 100px;
+}
+.schedule table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+.schedule table thead tr th {
+  font: var(--font-m);
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 25px 0;
+  background: #f0f0f0;
+}
+.schedule table tbody tr {
+  border-top: 1px solid #e5e5e5;
+  height: 115px;
+}
+.schedule table tbody tr td {
+  width: 146px;
+  background: var(--primary-color);
+  border-right: 1px solid #e5e5e5;
+}
+
+.filledCell h6 {
+  font: var(--font-m);
+  font-weight: 600;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.filledCell span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bg-footer);
+}
+.filledCell .trainerName {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+.filledCell:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+  background: -o-linear-gradient(left, #eb3c5a, #f67831);
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.filledCell:hover h6 {
+  color: var(--primary-color);
+}
+.filledCell:hover span {
+  color: var(--primary-color);
+}
+.filledCell:hover .trainerName {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1199px) {
+  .schedule table {
+    max-width: 930px;
+  }
+  .schedule table thead tr th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .schedule table {
+    max-width: 705px;
+  }
+  .schedule table tbody tr {
+    height: 105px;
+  }
+  .filledCell h6 {
+    font-size: 14px;
+  }
+  .filledCell span {
+    font-size: 12px;
+  }
+  .filledCell .trainerName {
+    font-size: 12px;
+  }
+  .workoutTime {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .classBtn {
+    max-width: 500px;
+    gap: 24px;
+  }
+  .schedule table {
+    max-width: 690px;
+  }
+  .schedule table tbody tr td {
+    background: none;
+  }
+  .schedule table thead tr th {
+    font-size: 12px;
+  }
+  .schedule table .workoutTime {
+    height: 100%;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+  }
+  .filledCell h6 {
+    font-size: 12px;
+  }
+  .filledCell span {
+    font-size: 10px;
+  }
+  .filledCell .trainerName {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .schedule {
+    overflow: auto;
+  }
+}
+
+/*# sourceMappingURL=sectionGallery.module.css.map */

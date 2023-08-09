@@ -1,0 +1,35 @@
+.bannerWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerText {
+  h2 {
+    font: var(--font-l);
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+  }
+}
+.bannerPerson img {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .bannerWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerPerson img {
+    position: relative;
+    bottom: -7px;
+  }
+}

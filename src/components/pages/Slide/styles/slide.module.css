@@ -1,0 +1,87 @@
+.workout {
+  height: 255px;
+  margin-right: 15px;
+  position: relative;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+.workout .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.workout h4 {
+  font: var(--font-s);
+  font-weight: 600;
+}
+.workout span {
+  font-size: 14px;
+}
+.workout img {
+  height: 255px;
+}
+
+.stories {
+  height: 100%;
+  text-align: center;
+}
+.stories p {
+  font-size: 22px;
+  color: var(--bg-footer);
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+.stories .slideStory {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stories .slideStory .image {
+  position: relative;
+}
+.stories .slideStory .image img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.stories .slideStory .image .quote {
+  position: absolute;
+  left: 23px;
+  top: -21px;
+  z-index: -1;
+}
+.stories .slideStory .image .quote img {
+  width: auto;
+  height: auto;
+  border-radius: initial;
+}
+
+.author {
+  margin-top: 25px;
+}
+.author h4 {
+  font: var(--font-s);
+  color: var(--bg-footer);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.author span {
+  font: var(--font-m);
+  color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+  .workout {
+    max-width: 380px;
+  }
+}
+
+/*# sourceMappingURL=slide.module.css.map */
