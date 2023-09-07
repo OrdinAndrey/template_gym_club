@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slide from '@/components/pages/Slide'
 import useCarousel from './hooks/useCarousel.tsx'
-import { PropsInterface } from '@/components/global/Carousel/types'
+import { PropsInterface } from './types'
 const Carousel = ({ type }: PropsInterface) => {
   const { slidesWorkout, settingsWorkout, settingStories, slidesStories } =
     useCarousel()
