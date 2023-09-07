@@ -1,4 +1,4 @@
-import { ISlideWorkout } from '@/components/global/Carousel/types'
+import { ISlideWorkout } from '@/components/pages/Carousel/types'
 
 const useSectionClasses = () => {
   const slides: ISlideWorkout[] = [
