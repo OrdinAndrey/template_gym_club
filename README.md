@@ -4,7 +4,7 @@ This is a ready to use template for any landing page you need, built with React,
 
 ## Preview
 
-![202585708-82c27ea9-85fc-491f-b991-d4005651b0c2](https://github.com/OrdinAndrey/template_gym_club/assets/130368254/b71e29e4-7f34-481a-8705-3a8d5d2a3928)
+![preview](https://github.com/OrdinAndrey/template_gym_club/assets/130368254/676d4278-7146-466d-b63c-9f7dd8fbfaa1)
 
 ## Getting Started
 
