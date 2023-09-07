@@ -4,6 +4,8 @@ This is a ready to use template for any landing page you need, built with React,
 
 ## Preview
 
+<p align="center"><a href="https://ordinandrey.github.io/template_gym_club/" target='blank'>Gojym</a></p> 
+
 ![preview](https://github.com/OrdinAndrey/template_gym_club/assets/130368254/676d4278-7146-466d-b63c-9f7dd8fbfaa1)
 
 ## Getting Started
